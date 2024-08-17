@@ -18,9 +18,8 @@ Projeto de um Formulário de Convite desenvolvido como exercício de aula sobre 
 
 <br>
 
-<p align="center">
-  <img alt="Preview do projeto desenvolvido." src=".github/preview.png" width="100%">
-</p>
+
+
 
 
 ## 🚀 Tecnologias
@@ -31,6 +30,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 
 ## Projeto
-
-Nesse projeto iremos desenvolver um Formulário de matrícula para uma escola de educação infantil. 
-Vamos trabalhar com diversos tipos de input além de rever e treinar bastante o nosso CSS.
+<p align="center">
+<img alt="About do projeto desenvolvido." src=".github/about.png" width="100%">
+</p>
+<p align="center">
+  <img alt="Preview do projeto desenvolvido." src=".github/preview.png" width="100%">
+</p>
