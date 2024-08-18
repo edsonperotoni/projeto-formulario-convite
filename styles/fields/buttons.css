@@ -1,0 +1,27 @@
+button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 500;
+    color: var(--brand-light);
+    padding: .25rem 1.25rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    height: 3rem;;
+    
+    &.btn-primary {
+        color: white;
+        background-color: var(--brand-dark);
+
+        &:hover,
+        &:focus {
+            outline: .025rem solid var(--brand-dark);
+        }
+    }
+img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+}

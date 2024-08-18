@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
   <title>Formulário de Convite</title>
 </head>
+
 <body>
-  
+
+  <div id="app">
+
+    <div id="brand">
+      <div id="title">
+        <img src="assets/icons/party.svg" alt="">
+        <p class="text-logo text-color-pink">Festivite</p>
+        <p>Crie um convite digital para o seu evento</p>
+      </div>
+    </div>
+
+    <div id="invite">
+      <p class="text-header-md text-color-header">Crie seu convite</p>
+      <div id="forms">
+
+        <form method="post" enctype="multipart/form-data" action="#">
+
+          <fieldset class="event-info">
+
+            <div id="about">
+              <img src="assets/icons/calendar.svg" alt="">
+              <p class="text-header-sm text-color-header">Sobre o evento</p>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="fullname">Título</label>
+              <input id="fullname" name="fullname" type="text" placeholder="Nome do evento" required>
+            </div>
+
+            <div class="horizontal-wrapper">
+              <div class="input-wrapper">
+                <label for="data_inicio">Início</label>
+                <input type="date" name="data_inicio" id="data_inicio" lang="pt-BR" required>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="data_fim">Fim</label>
+                <input type="date" name="data_fim" id="birth" lang="pt-BR" required>
+              </div>
+            </div>
+
+          </fieldset>
+          <footer>
+            <div class="terms-wrapper input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms">
+
+              <label for="terms">
+                Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>
+                  Política de Privacidade</strong>
+              </label>
+            </div>
+
+            <div class="terms-wrapper input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms">
+
+              <label for="terms">
+                Aceito receber atualizações e promoções por e-mail</strong>
+              </label>
+            </div>
+            <div class="terms-wrapper input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms">
+
+              <label for="terms">
+                Aceito receber atualizações e promoções por SMS</strong>
+              </label>
+            </div>
+
+            <button class="btn-primary" type="submit">
+              <img src="assets/icons/ticket.svg" alt="">
+              Gerar convite
+            </button>
+
+          </footer>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

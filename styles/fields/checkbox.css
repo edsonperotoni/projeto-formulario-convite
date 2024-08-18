@@ -1,0 +1,31 @@
+.terms-wrapper {
+    padding-inline: 0.125rem;
+    display: flex;
+    gap: .75rem;
+    align-items:center;
+
+    & strong {
+        font-weight: 500;
+        color: var(--brand-light);
+    }
+}
+
+.checkbox-wrapper {
+    position: relative;
+
+    & [type="checkbox"] {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    .checkbox-image {
+        flex: 0 0 1.25rem;
+        height: 1.25rem;
+        background-image: url(../../assets/icons/check.svg);
+    }
+
+     &:has(:checked) .checkbox-image {
+        background-image: url(../../assets/icons/check-checked.svg);
+    }
+}

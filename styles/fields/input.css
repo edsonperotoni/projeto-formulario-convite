@@ -1,0 +1,80 @@
+input,
+textarea {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    border: 2px solid transparent;
+    outline: 1px solid var(--input-stroke);
+
+    padding: .75rem 1rem;
+
+    font: var(--body-md);
+    color: var(--text-body);
+    background-color: var(--input-base);
+}
+
+label {
+    font: var(--text-sm);
+    color: var(--text-secondary);
+
+    display: block;
+    margin-bottom: .25rem;
+}
+
+input:focus,
+textarea:focus,
+input[type="date"]:focus-within {
+    outline: .25rem solid var(--input-stroke);
+    border-color: var(--brand-light);
+    outline-offset: .1px;
+}
+
+input[type="date"] {
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../../assets/icons/calendar.svg) center/contain;
+        right: 1rem;
+        width: 1.25rem;
+        height: 1.25rem;
+
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+input {
+
+    &:invalid {
+        border: 0.125rem solid var( --feedback-danger);
+    }
+
+    &+small {
+        font: var(--text-sm);
+        color: #78716C;
+
+        display: inline-block;
+        margin-top: .25rem;
+    }
+
+    &[required]+.error {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        font: var(--text-sm);
+        color: var(--feedback-danger);
+
+        margin-top: .25rem;
+    }
+
+    &:not(:focus):valid+.error {
+        display: none;
+    }
+}
