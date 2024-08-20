@@ -69,7 +69,7 @@
 }
 
 #brand {
-    background-image: url(/assets/images/pie.png);
+    background-image: url(../assets/images/pie.png);
     background-size: cover;
     padding: 2rem;
     max-width: 25rem;
