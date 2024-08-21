@@ -71,7 +71,7 @@ body {
 }
 
 .text-body-sm{
-    font: var(--body-sm);
+    font: var(--text-sm);
     color: var(--text-body);
 }
 

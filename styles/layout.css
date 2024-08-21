@@ -26,7 +26,7 @@
             flex-direction: column;
             gap: 0.75rem;
 
-            #about {
+            #about,#theme{
                 display: flex;
                 flex-direction: row;
                 column-gap: 0.75rem;
