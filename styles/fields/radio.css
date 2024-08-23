@@ -7,7 +7,8 @@
   gap: 0.25rem;
   padding: 0.25rem;
   width: 17rem;
-  height: 3rem;;
+  height: 3rem;
+  ;
 }
 
 .radio-inner {
@@ -48,9 +49,39 @@
 
     & .radio-image {
       background-image: url(../../assets/icons/shape.svg);
-      background-size:cover;
+      background-size: cover;
       opacity: 0.5;
       border-radius: 0.32rem;
+    }
+  }
+}
+
+.radio-color-inner {
+  position: relative;
+
+  & input,
+  & input:hover,
+  & input:focus {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+
+  &:has(:checked) {
+    svg {
+      border: 2px solid var(--brand-light);
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+
+  &:hover {
+    svg {
+      rect+rect {
+        fill: var(--shape-over);
+      }
+
     }
   }
 }
