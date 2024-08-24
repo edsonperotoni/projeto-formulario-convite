@@ -40,7 +40,7 @@ fieldset+fieldset {
             width: 35rem;
 
             #about,
-            #theme,
+            #event_theme,
             #contact {
                 display: flex;
                 flex-direction: row;
@@ -53,16 +53,27 @@ fieldset+fieldset {
             }
 
             #colors {
-                #items {
+                #items_colors {
                     padding-top: 1rem;
                     display: flex;
-                  align-items: center;
-                   justify-content: space-between;
-                
-                    svg{
+                    align-items: center;
+                    justify-content: space-between;
+
+                    svg {
                         width: 2.5rem;
                         height: 2.5rem;
                     }
+                }
+            }
+
+            #theme {
+             
+                #items_theme {
+                    padding-top: 1rem;
+                    width: 35rem;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    gap: 0.5rem;
                 }
             }
 

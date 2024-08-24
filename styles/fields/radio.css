@@ -77,11 +77,35 @@
   }
 
   &:hover {
-    svg {
-      rect+rect {
+    svg rect:nth-child(1){
         fill: var(--shape-over);
       }
+  }
+}
 
-    }
+
+
+.radio-theme-inner {
+  position: relative;
+
+  & input,
+  & input:hover,
+  & input:focus {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+  
+  &:has(:checked) {
+   svg rect:nth-child(2){
+    stroke: var(--brand-light);
+    stroke-width:0.125rem;
+      }
+  }
+
+  &:hover {
+    svg rect:nth-child(1){
+      fill: var(--shape-over);
+      }
   }
 }
