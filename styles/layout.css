@@ -70,6 +70,7 @@ fieldset+fieldset {
              
                 #items_theme {
                     padding-top: 1rem;
+                    padding-bottom: 1.75rem;
                     width: 35rem;
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr 1fr;
