@@ -2,7 +2,7 @@
     padding-inline: 0.125rem;
     display: flex;
     gap: .75rem;
-    align-items:center;
+    align-items: center;
 
     & strong {
         font-weight: 500;
@@ -25,7 +25,51 @@
         background-image: url(../../assets/icons/check.svg);
     }
 
-     &:has(:checked) .checkbox-image {
+    &:has(:checked) .checkbox-image {
         background-image: url(../../assets/icons/check-checked.svg);
+    }
+}
+
+
+.toogle-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: center;
+    position: relative;
+    padding-top: 0.75rem;
+
+    & [type="checkbox"] {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    label.dark {
+        display: block;
+    }
+
+    label.light {
+        display: none;
+    }
+
+    .toogle-image {
+        width: 4rem;
+        height: 2rem;
+        background-image: url(../../assets/icons/switch-toogle-dark.svg);
+    }
+
+    &:has(:checked) {
+        .toogle-image {
+            background-image: url(../../assets/icons/switch-toogle-light.svg);
+        }
+
+        label.light {
+            display: block;
+        }
+
+        label.dark {
+            display: none;
+        }
     }
 }

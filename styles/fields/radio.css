@@ -77,9 +77,9 @@
   }
 
   &:hover {
-    svg rect:nth-child(1){
-        fill: var(--shape-over);
-      }
+    svg rect:nth-child(1) {
+      fill: var(--shape-over);
+    }
   }
 }
 
@@ -95,17 +95,17 @@
     position: absolute;
     inset: 0;
   }
-  
+
   &:has(:checked) {
-   svg rect:nth-child(2){
-    stroke: var(--brand-light);
-    stroke-width:0.125rem;
-      }
+    svg rect:nth-child(2) {
+      stroke: var(--brand-light);
+      stroke-width: 0.125rem;
+    }
   }
 
   &:hover {
-    svg rect:nth-child(1){
+    svg rect:nth-child(1) {
       fill: var(--shape-over);
-      }
+    }
   }
 }
